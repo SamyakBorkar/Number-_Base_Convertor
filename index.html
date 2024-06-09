@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samyak's Base Converter</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="/logo.webp" type="image/x-icon">
+</head>
+<body>
+
+<div class="container">
+    <h1>Sam's Base <span>Converter</span></h1>
+    <label for="Decimal">Decimal:</label>
+    <input type="text" id="decimal" placeholder="Enter Decimal number" oninput="convert('decimal')"><br><br>
+    
+    <label for="Hexadecimal">Hexadecimal:</label>
+    <input type="text" id="hexadecimal" placeholder="Hexadecimal" oninput="convert('hexadecimal')"><br><br>
+    
+    <label for="Binary">Binary:</label>
+    <input type="text" id="binary" placeholder="Binary" oninput="convert('binary')"><br><br>
+    
+    <label for="Octal">Octal:</label>
+    <input type="text" id="octal" placeholder="Octal" oninput="convert('octal')"><br><br>
+
+    <label for="Gray">Gray Code:</label>
+    <input type="text" id="gray" placeholder="Gray Code" oninput="convert('gray')">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
