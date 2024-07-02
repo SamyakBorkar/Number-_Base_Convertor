@@ -5,12 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Samyak's Base Converter</title>
 <link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="/logo.webp" type="image/x-icon">
+<link rel="shortcut icon" href="./logo.avif" type="image/x-icon">
 </head>
 <body>
 
-<div class="container">
-    <h1>Sam's Base <span>Converter</span></h1>
+<div class="main-container">
+    <h1>Samyak's Base <span>Converter</span></h1>
+    <div class="fields-container">
     <label for="Decimal">Decimal:</label>
     <input type="text" id="decimal" placeholder="Enter Decimal number" oninput="convert('decimal')"><br><br>
     
@@ -25,6 +26,7 @@
 
     <label for="Gray">Gray Code:</label>
     <input type="text" id="gray" placeholder="Gray Code" oninput="convert('gray')">
+</div>
 </div>
 
 <script src="script.js"></script>

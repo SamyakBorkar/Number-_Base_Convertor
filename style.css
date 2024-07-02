@@ -1,8 +1,11 @@
 body {
   font-family: Arial, sans-serif;
-  position: absolute;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: gray;
-  padding-top: 8%;
 
   background: conic-gradient(at 50% 25%, #0000 75%, #47d3ff 0),
     conic-gradient(at 50% 25%, #0000 75%, #47d3ff 0) 60px 60px,
@@ -14,19 +17,28 @@ body {
   background-size: calc(4 * 60px) calc(4 * 60px);
 }
 
-.container {
+.main-container {
   background-color: rgb(37, 36, 36);
   height: 50vh;
   width: 40vw;
   text-align: center;
-  padding-top: 5px;
-  position: relative;
-  left: 72%;
-  border-radius: 10%;
+  padding: 0px 30px; 
+  border-radius: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.fields-container {
+  width: 100%;
+}
+
 h1 {
   color: white;
-  padding-bottom: 8%;
+  padding-top: 0;
+  margin: 0;
+  padding-bottom: 4%;
 }
 
 label {
@@ -37,52 +49,60 @@ label {
 }
 
 input[type="text"] {
-  width: 28vw;
+  width: calc(100% - 120px); 
   padding: 5px;
   margin-bottom: 10px;
 }
-span{
+
+span {
   color: yellow;
 }
 
 @media (max-width: 1440px) {
   input[type="text"] {
-    width: 25vw;
+    width: calc(100% - 120px);
     padding: 5px;
     margin-bottom: 15px;
   }
+
+  h1 {
+    padding-bottom: 5%;
+  }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   input[type="text"] {
-    width: 20vw;
+    width: calc(100% - 120px);
     padding: 5px;
     margin-bottom: 15px;
   }
+
+  .main-container {
+    height: 55vh;
+    width: 50vw;
+  }
 }
 
-@media (max-width:768px){
-  .container {
-    background-color: rgb(37, 36, 36);
+@media (max-width: 768px) {
+  .main-container {
     height: 50vh;
-    width: 40vw;
-    text-align: center;
-    padding-top: 5px;
-    position: relative;
-    left: 72%;
-    border-radius: 10%;
-  } 
+    width: 60vw;
+  }
+  h1{
+    font-size: 30px;
+  }
 }
 
-@media (max-width:425px){
-  .container {
-    background-color: rgb(37, 36, 36);
+@media (max-width: 425px) {
+  .main-container {
     height: 50vh;
-    width: 40vw;
-    text-align: center;
-    padding-top: 5px;
-    position: relative;
-    left: 72%;
-    border-radius: 10%;
-  } 
+    width: 80vw;
+  }
+  h1{
+    padding-bottom: 7%;
+  }
+
+  input[type="text"] {
+    width: calc(100% - 120px);
+  }
 }
