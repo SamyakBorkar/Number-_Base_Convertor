@@ -4,7 +4,7 @@ A simple and interactive **Number Base Converter** that allows users to convert 
 Built using **HTML, CSS, and JavaScript**, this project focuses on manual logic implementation instead of relying on built-in conversion methods, providing a better understanding of number systems.  
 
 🔗 **Live Demo:** [Click Here](https://number-base-convertor.vercel.app/)  
-📂 **GitHub Repository:** [Click Here](https://github.com/your-username/number-base-converter)
+📂 **GitHub Repository:** [Click Here](https://github.com/SamyakBorkar/Number-_Base_Convertor.git)
 
 ---
 
@@ -32,7 +32,7 @@ Built using **HTML, CSS, and JavaScript**, this project focuses on manual logic 
 ## ⚙️ How to Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/number-base-converter.git
+   git clone https://github.com/SamyakBorkar/Number-_Base_Convertor.git
   
 2. Navigate to the project folder:
    ```bash
